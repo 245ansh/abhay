@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Snippet - Code Snippet Sharing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Share Your Code Snippet</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="add-snippet.html">Add Snippet</a></li>
+                    <li><a href="snippets.html">View Snippets</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="snippet-form">
+            <h2>Submit a New Snippet</h2>
+            <form id="snippet-form">
+                <label for="title">Snippet Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="language">Language:</label>
+                <select id="language" name="language" required>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Java">Java</option>
+                </select>
+
+                <label for="code">Code Snippet:</label>
+                <textarea id="code" name="code" rows="10" required></textarea>
+
+                <button type="submit">Share Snippet</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
